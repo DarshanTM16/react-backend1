@@ -1,0 +1,199 @@
+footer{
+    margin-top: 5%;
+}
+
+footer h4{
+    font-size: 18px;
+}
+
+
+.top-post{
+    position: relative;
+    width: 140px;
+    height: 45px;
+    font-size: 3rem;
+    grid-column: 2/3;
+}
+
+.border-bottom{
+    position: absolute;
+    top: 97%;
+    right: 50%;
+    left: 0;
+    border-bottom: 2px solid red;
+}
+
+.top-post-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:  50px 250px repeat(3, 100px);
+    grid-column-gap: 20px;
+}
+
+.main-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-image{
+    grid-row: 2/6;
+}
+
+
+.tp1{
+    width: 100%;
+    grid-row: 2/3;
+    margin-top: 10px;
+}
+
+.tpimage-1{
+    height: 60%;
+}
+
+.tp1-text{
+    display: inline-block;
+    width: 90%;
+}
+
+.tp2{
+    width: 100%;
+    grid-row: 3/4;
+}
+
+.tpimage-2{
+    height: 60%;
+    width: 100%;
+}
+
+.tp2-text{
+    display: inline-block;
+    width: 62%;
+    margin-left: 10px;
+}
+
+.tp3{
+    width: 100%;
+    grid-row: 4/5;
+}
+
+.tpimage-3{
+    height: 60%;
+    width: 100%;
+}
+
+.tp3-text{
+    display: inline-block;
+    width: 62%;
+    margin-left: 10px;
+}
+
+.tp4{
+    width: 100%;
+    grid-row: 5/6;
+}
+
+.tpimage-4{
+    height: 60%;
+    width: 100%;
+}
+
+.tp4-text{
+    display: inline-block;
+    width: 62%;
+    margin-left: 10px;
+}
+
+.num{
+    color: grey;
+    font-size: 2rem;
+}
+
+.text-main{
+    color: white;
+    font-size: 3.5rem;
+    margin-top: -40%;
+    text-align: center;
+}
+
+.timeline-main{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.700);
+}
+
+
+.l-stories{
+    position: relative;
+    width: 195px;
+    height: 45px;
+    font-size: 3rem;
+}
+
+.border-bottom-l{
+    position: absolute;
+    top: 97%;
+    right: 50%;
+    left: 0;
+    border-bottom: 2px solid red;
+}
+
+.latest-stories{
+    margin-top: 5%;
+}
+
+.latest-story-container{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ls{
+    width: 25%;
+}
+
+.view-more{
+    margin-top: 5%;
+    padding: 20px;
+}
+
+
+@media (max-width: 800px){
+    .main-image{
+        display: none;
+    }
+
+    .top-post-container{
+        grid-template-columns: 1fr;
+    }
+
+    .top-post{
+        grid-column: 1/2;
+        font-size: 2.5rem;
+        height: 40px;
+    }
+
+    .tp{
+        grid-column: 1/2;
+    }
+
+    .tp h4{
+        font-size: 16px;
+    }
+
+    .tp .num{
+        display: none;
+    }
+
+    .l-stories{
+        font-size: 2.5rem;
+        height: 40px;
+    }
+
+    .latest-story-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ls{
+        width: 100%;
+    }
+}
